@@ -1,0 +1,139 @@
+@import "modules/burger-menu";
+
+body{
+    background: white;
+}
+a{
+    text-decoration: none !important;
+}
+a:hover{
+    color: #cb5444;
+}
+.content.bm{
+    margin-left: 20%;
+}
+//Превьюшка товара в каталоге
+.post-wrap {
+    max-width: 1120px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: left;
+    flex-wrap: wrap;
+}
+.post-item {
+    padding: 10px;
+}
+.post-item-wrap {
+    position: relative;
+}
+.post-item img {
+    display: block;
+    object-fit: cover;
+    width: 100%;
+    height: 400px;
+}
+.post-item:hover .post-info {
+    opacity: 1;
+}
+.post-link {
+    text-decoration: none;
+}
+.post-info {
+    background: linear-gradient(to bottom, rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, .5) 100%);
+    color: white;
+    opacity: 0;
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    transition: .5s linear;
+}
+.post-meta {
+    text-transform: uppercase;
+    line-height: 18px;
+    font-weight: 500;
+    font-size: 11px;
+    padding: 0 0 10px 15px;
+    margin-bottom: 15px;
+    position: relative;
+    display: inline-flex;
+    align-items: center;
+    border-bottom: 1px solid #ff7760;
+}
+.post-date:after {
+    content: "\2022";
+    margin: 0 6px;
+    font-size: 14px;
+}
+.post-title {
+    padding: 0 15px;
+    font-weight: 600;
+    margin-bottom: 15px;
+}
+@media (min-width: 768px) {
+    .post-item {
+        flex-basis: 50%;
+        flex-shrink: 0;
+    }
+}
+@media (min-width: 960px) {
+    .post-item {
+        flex-basis: 33.333333333%;
+    }
+}
+//Превьюшка товара в каталоге
+//Просмотр товара
+.sale-bg{
+    padding: 5px 5px 5px 5px;
+    background: white;
+    box-shadow: 0 0 10px #969696;
+    width: 80%;
+    object-fit: cover;
+    position: relative;
+}
+.sale_parameter{
+    font-family: "Nunito", sans-serif;
+    padding: 5px 30px 5px 30px;
+}
+.sale-catalog{
+    position: absolute;
+    z-index: 10;
+    width: 60px;
+    height: 60px;
+    margin-left: 90%;
+    margin-top: 58%;
+}
+.sale-catalog:hover{
+    width: 50px;
+    height: 50px;
+}
+
+//Виджет корзины
+.vidget{
+    width: max-content;
+}
+.cart_button{
+    width: max-content;
+    height: 40px;
+}
+.vidget_element{
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    cursor: pointer;
+}
+.vidget_element:hover{
+    box-shadow: 0 0 10px #4e555b;
+}
+.amount{
+    width: 40px;
+    height: 40px;
+}
+.cart_action{
+    width: 40px;
+    height: 40px;
+}
+//Виджет корзины
+
+//Карточка товара в корзине
+
+//Карточка товара в корзине
